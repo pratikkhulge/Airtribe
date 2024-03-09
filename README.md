@@ -115,34 +115,53 @@ This repository contains the backend server implementation for Airtribe applicat
 
 You can use the following `curl` commands to test each API:
 
+#### Create Course API
 ```bash
-# Create Course API
 curl -X POST http://localhost:3001/courses -H "Content-Type: application/json" -d "{\"instructor_id\": 1, \"name\": \"Introduction to Programming Language\", \"max_seats\": 50, \"start_date\": \"2024-04-01\"}"
+```
 
-# Update Course Details API
+#### Update Course Details API
+```bash
 curl -X PUT http://localhost:3001/courses/course_id -H "Content-Type: application/json" -d "{\"name\": \"Updated Course Name\", \"max_seats\": 60, \"start_date\": \"2024-05-01\"}"
+```
 
-# Course Registration API
+#### Course Registration API
+```bash
 curl -X POST http://localhost:3001/leads -H "Content-Type: application/json" -d "{\"course_id\": 1, \"name\": \"John Doe\", \"email\": \"john.doe@example.com\", \"phone_number\": \"1234567890\", \"linkedin_profile\": \"https://www.linkedin.com/in/johndoe/\"}"
+```
 
-# Lead Update API
+#### Lead Update API
+```bash
 curl -X PUT http://localhost:3001/leads/lead_id -H "Content-Type: application/json" -d "{\"status\": \"Accepted\"}"
+```
 
+#### Lead Search API
+```bash
 # Lead Search API
 curl -X GET 'http://localhost:3001/leads?name=John&phoneNumber=1234567890&status=Accepted'
+```
 
+#### Add Comment API
+```bash
 # Add Comment API
 curl -X POST http://localhost:3001/comments -H "Content-Type: application/json" -d "{\"lead_id\": 1, \"instructor_id\": 1, \"comment\": \"Great performance!\"}"
+```
 
-# Get All Courses API
+#### Get All Courses API
+```bash
 curl -X GET http://localhost:3001/courses/all
+```
 
-# Get All Leads API
+#### Get All Leads API
+```bash
 curl -X GET http://localhost:3001/leads/all
+```
 
-# Get All Comments API
+#### Get All Comments API
+```bash
 curl -X GET http://localhost:3001/comments/all
 ```
+
 
 Replace placeholders such as `course_id` and `lead_id` with actual IDs.
 
