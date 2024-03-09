@@ -27,6 +27,32 @@ This repository contains the backend server implementation for Airtribe applicat
 - **Get All Comments API**: Fetches all comments from the database.
 
 ## Database Queries
+```bash
+    project/
+│
+├── courses/
+│   ├── courseController.js
+│   ├── courseService.js
+│   └── courseRoutes.js
+│
+├── leads/
+│   ├── leadController.js
+│   ├── leadService.js
+│   └── leadRoutes.js
+│
+├── comments/
+│   ├── commentController.js
+│   ├── commentService.js
+│   └── commentRoutes.js
+│
+├── database/
+│   └── db.js
+│
+├── index.js
+└── package.json
+```
+
+## Database Queries
 
 - **Create Course API**: Inserts a new course record into the database.
 - **Update Course Details API**: Updates the course record in the database.
