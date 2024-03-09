@@ -109,13 +109,13 @@ curl -X GET 'http://localhost:3001/leads?name=John&phoneNumber=1234567890&status
 curl -X POST http://localhost:3001/comments -H "Content-Type: application/json" -d "{\"lead_id\": 1, \"instructor_id\": 1, \"comment\": \"Great performance!\"}"
 
 # Get All Courses API
-curl -X GET http://localhost:3001/all-courses
+curl -X GET http://localhost:3001/courses/all
 
 # Get All Leads API
-curl -X GET http://localhost:3001/all-leads
+curl -X GET http://localhost:3001/leads/all
 
 # Get All Comments API
-curl -X GET http://localhost:3001/all-comments
+curl -X GET http://localhost:3001/comments/all
 ```
 
 Replace placeholders such as `course_id` and `lead_id` with actual IDs.
