@@ -1,0 +1,40 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+
+# Dependency directories
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Mac files
+.DS_Store
+
+# Editor files
+*.swp
+*.swo
+*.swn
+*.swm
+*.swl
+*.un~
+*.bak
+*.d
+
+# dotenv environment variables file
+.env
+
+# VSCode directory
+.vscode/
