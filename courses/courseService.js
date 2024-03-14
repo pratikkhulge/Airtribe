@@ -18,11 +18,6 @@ exports.createCourse = (req, res) => {
             res.json({ id: result.insertId, instructor_id, name, max_seats, start_date });
         }
     });
-    res.end( 
-        'Connect FrontEnd',
-         'To test this API, you can use the following command:\n' +
-                     'curl -X POST http://localhost:3001/courses -H "Content-Type: application/json" -d \'{"instructor_id": 1, "name": "Introduction to Programming Language", "max_seats": 50, "start_date": "2024-04-01"}\''
-    );
 };
 
 exports.updateCourse = (req, res) => {
